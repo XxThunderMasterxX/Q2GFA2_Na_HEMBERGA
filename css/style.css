@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit&family=Lilita+One&family=Oswald&family=Public+Sans&family=Rubik+Doodle+Triangles&family=Rubik+Maps&family=Schibsted+Grotesk&family=Sura&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.text{
+    color: beige;
+    font-size:xx-large;
+    font-family: 'Anton', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Lilita One', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Public Sans', sans-serif;
+font-family: 'Rubik Doodle Triangles', system-ui;
+font-family: 'Rubik Maps', system-ui;
+font-family: 'Schibsted Grotesk', sans-serif;
+font-family: 'Sura', serif;
+    font-weight: bolder;
+    margin-top: 20%;
+    margin-left: 40vw;
+    z-index: 1;
+}
+
+
+body{
+    background-image: url(../images/bg.jpg);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+}
+
+.planet{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+#ringplanet{
+    background-image: url(../images/ringplanet.gif);
+    width: 20vw;
+    height: 20vw;
+    animation:GasGiantmotion 10s linear infinite;
+    z-index:-1;
+}
+
+@keyframes ringplanet{
+    0%  {transform:rotate(180deg);}
+    100%{transform:translate(-1000px, 10px);}
+}
+
+#gasplanet{
+    background-image: url(../images/gasplanet.gif);
+    width: 20vw;
+    height: 20vw;
+    top: -5vw;
+    left: 60vw;
+    animation: alternate 
+}
+
+
+
+@keyframes gasplanetmotion {
+    0%  {transform:translate(-100px, 300px);}
+    100%{transform:translate(400px, -1000px);}
+}
+
